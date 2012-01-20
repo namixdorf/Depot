@@ -80,4 +80,8 @@ class ProductsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def current_time()
+    Time.now
+  end
 end
