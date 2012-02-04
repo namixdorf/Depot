@@ -25,7 +25,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -33,6 +33,10 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
+end
+
+group :production do
+	gem 'mysql2'
 end
 
 gem 'will_paginate', '~> 3.0'
